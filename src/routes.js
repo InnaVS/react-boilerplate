@@ -7,6 +7,7 @@ import { createBrowserHistory } from 'history';
 import {syncHistoryWithStore} from "react-router-redux";
 // CONTAINERS
 import AppContainer from "./containers/AppContainer";
+import ChildContainer from "./containers/ChildContainer";
 
 const Routes = ({store}) => {
   // const history = syncHistoryWithStore(createBrowserHistory, store);
@@ -14,8 +15,10 @@ const Routes = ({store}) => {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Route path="/" exact component={AppContainer}>
-        </Route>
+        <div>
+          <Route path="/" exact component={AppContainer}/>
+          <Route  path="/child" component={ChildContainer}/>
+        </div>
       </BrowserRouter>
     </Provider>
   );
