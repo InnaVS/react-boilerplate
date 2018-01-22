@@ -8,6 +8,7 @@ class App extends Component {
           <a
             className="center"
             href="/child">
+            <span>to ChildContainer</span>
             <i className="fa fa-fw fa-lg fa-hand-o-right" />
           </a>
         </header>

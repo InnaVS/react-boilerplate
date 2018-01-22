@@ -4,13 +4,14 @@ class ChildContainer extends Component {
   render() {
     return (
       <div>
-        <h5>
+        <header>
           <a
             className="center"
             href="/">
+            <span>to AppContainer</span>
             <i className="fa fa-fw fa-lg fa-hand-o-left"/>
           </a>
-        </h5>
+        </header>
       </div>
     );
   }
